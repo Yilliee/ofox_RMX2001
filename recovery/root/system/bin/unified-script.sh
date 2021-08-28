@@ -21,7 +21,7 @@ load_RMX2151()
     echo "Realme 7 detected - using RMX2151 props"
 }
 
-project=$(cat /proc/oppoVersion/prjVersion)
+project=$(cat /proc/oplusVersion/prjVersion)
 echo $project
 
 case $project in
