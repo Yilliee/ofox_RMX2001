@@ -83,7 +83,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	#R11
 	export FOX_R11=1
-	export FOX_VERSION="R11.1_1"
+	export FOX_VERSION="R11.1_2"
 	export FOX_BUILD_TYPE="Beta"
 	export FOX_VARIANT="RUI2.0"
 
