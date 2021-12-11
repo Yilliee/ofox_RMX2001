@@ -70,8 +70,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_GREP_BINARY=1
 	export FOX_USE_SED_BINARY=1
 	export FOX_USE_TAR_BINARY=1
+	export FOX_REPLACE_TOOLBOX_GETPROP=1
+	export FOX_REPLACE_BUSYBOX_PS=1
+	export FOX_USE_BASH_SHELL=1
+	export FOX_BUILD_BASH=1
+	export OF_ENABLE_LPTOOLS=1
 	export OF_QUICK_BACKUP_LIST="/super;/boot;/dtbo;/vbmeta;/vbmeta_system;/vbmeta_vendor;/data"
-	export OF_USE_TWRP_SAR_DETECT=1
 	export OF_CHECK_OVERWRITE_ATTEMPTS=1
 	export OF_HIDE_NOTCH=1
 	export OF_USE_GREEN_LED=0
