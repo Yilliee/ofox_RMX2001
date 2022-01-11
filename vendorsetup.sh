@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="RMX2001"
+FDEVICE="wasabi"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -61,7 +61,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_FLASHLIGHT_ENABLE=1
 	export OF_MAINTAINER="Yillié"
 	export OF_TARGET_DEVICES="RMX2001, RMX2002, RMX2003, rmx2151, RMX2151, wasabi"
-	export TARGET_DEVICE_ALT="rmx2001, RMX2001, rmx2002, RNX2002, rmx2003, RMX2003, rmx2151, RMX2151, wasabi"
+	export TARGET_DEVICE_ALT="rmx2001, RMX2001, rmx2002, RMX2002, rmx2003, RMX2003, rmx2151, RMX2151, wasabi"
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 
@@ -98,7 +98,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_RUN_POST_FORMAT_PROCESS=1
 
 	# Custom pic for the maintainer's info in about section
-	export OF_MAINTAINER_AVATAR="$PWD/device/realme/RMX2001/maintainer.png"
+	export OF_MAINTAINER_AVATAR="$PWD/device/realme/wasabi/maintainer.png"
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
@@ -108,3 +108,4 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	  export | grep "TW_" >> $FOX_BUILD_LOG_FILE
 	fi
 fi
+

@@ -18,9 +18,9 @@
 # 	Please maintain this if you use this script or any part of it
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_RMX2001.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_wasabi.mk
 
 COMMON_LUNCH_CHOICES := \
-                twrp_RMX2001-eng \
-                twrp_RMX2001-user \
-                twrp_RMX2001-userdebug
+                twrp_wasabi-eng \
+                twrp_wasabi-user \
+                twrp_wasabi-userdebug

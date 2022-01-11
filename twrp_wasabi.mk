@@ -24,17 +24,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 
 # Inherit our device configuration
-$(call inherit-product, device/realme/RMX2001/device.mk)
+$(call inherit-product, device/realme/wasabi/device.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_RELEASE_NAME := RMX2001
-PRODUCT_DEVICE := RMX2001
-PRODUCT_NAME := twrp_RMX2001
+PRODUCT_RELEASE_NAME := wasabi
+PRODUCT_DEVICE := wasabi
+PRODUCT_NAME := twrp_wasabi
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := RMX2001
+PRODUCT_MODEL := wasabi
 PRODUCT_MANUFACTURER := realme
 
 # HACK: Set vendor patch level
