@@ -56,9 +56,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_STATUS_INDENT_RIGHT="48"
 	export OF_SCREEN_H="2400"
 	export OF_TWRP_COMPATIBILITY_MODE=1
-	export OF_FL_PATH1="/system/flashlight"
-	export OF_FL_PATH2=""
-	export OF_FLASHLIGHT_ENABLE=1
+#	export OF_FL_PATH1="/system/flashlight"
+#	export OF_FL_PATH2=""
+	export OF_FLASHLIGHT_ENABLE=0
 	export OF_MAINTAINER="Yillié"
 	export OF_TARGET_DEVICES="RMX2001, RMX2002, RMX2003, rmx2151, RMX2151, wasabi"
 	export TARGET_DEVICE_ALT="rmx2001, RMX2001, rmx2002, RMX2002, rmx2003, RMX2003, rmx2151, RMX2151, wasabi"
