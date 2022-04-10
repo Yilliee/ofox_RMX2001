@@ -5,7 +5,7 @@
 
 load_RMX2001()
 {
-    sed -i s/$(getprop ro.product.model)/RMX2001/g /prop.default
+    sed -i s/wasabi/RMX2001/g /prop.default
     resetprop "ro.product.model" "RMX2001"
     resetprop "ro.product.name" "RMX2001"
     resetprop "ro.build.product" "RMX2001"
@@ -15,7 +15,7 @@ load_RMX2001()
 
 load_RMX2151()
 {
-    sed -i s/$(getprop ro.product.model)/RMX2151/g /prop.default
+    sed -i s/wasabi/RMX2151/g /prop.default
     resetprop "ro.product.model" "RMX2151"
     resetprop "ro.product.name" "RMX2151"
     resetprop "ro.build.product" "RMX2151"
