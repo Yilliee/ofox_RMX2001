@@ -18,7 +18,7 @@
 # 	Please maintain this if you use this script or any part of it
 #
 
-ifneq ($(filter wasabi,$(TARGET_DEVICE)),)
+ifneq ($(filter RMX2001,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 

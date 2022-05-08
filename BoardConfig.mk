@@ -18,7 +18,7 @@
 #       Please maintain this if you use this script or any part of it
 #
 
-DEVICE_PATH := device/realme/wasabi
+DEVICE_PATH := device/realme/RMX2001
 
 # Architecture
 TARGET_ARCH := arm64
