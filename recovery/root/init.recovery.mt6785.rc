@@ -1,6 +1,8 @@
 on init
     mkdir /mnt/vendor/persist
     mount ext4 /dev/block/by-name/persist /mnt/vendor/persist rw
+    setprop sys.usb.configfs 1
+    setprop sys.usb.ffs.aio_compat 1
 
 on fs
     install_keyring
@@ -77,8 +79,3 @@ on property:twrp.decrypt.done=true
     stop hwservicemanager
     stop keymaster-4-0
     stop gatekeeper-1-0
-
-on property:sys.usb.config=fastboot
-    start servicemanager
-    start hwservicemanager
-    restart fastbootd
